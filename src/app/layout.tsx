@@ -12,12 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  themeColor: "#08090d",
-};
-
 export const metadata: Metadata = {
   title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
   description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
@@ -25,7 +19,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Abhishek Gangwar" }],
 };
 
-export const RootLayout = ({ children }: { children: React.ReactNode }) => {
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#08090d",
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -36,4 +36,8 @@ export const RootLayout = ({ children }: { children: React.ReactNode }) => {
       </body>
     </html>
   );
-};
+}
+
+// Top-level named exports for Next.js App Router metadata/viewport support
+// Default export `RootLayout` satisfies the `LayoutConfig` constraint
+// Previously missing `default` export caused: Type 'typeof import("/workspace/repo/src/app/layout")' does not satisfy the constraint 'LayoutConfig<"/">'. Property 'default' is missing...
