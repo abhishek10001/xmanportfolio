@@ -75,7 +75,7 @@ export function ContactSection() {
 
             <p className="text-zinc-300 text-sm sm:text-base leading-relaxed">
               Available for staff-level AI system architecture, speculative inference consulting, 
-              or deep research collaborations. Inquiries are responded to within 24 hours.
+              or deep research collaborations with Abhishek Gangwar. Inquiries are responded to within 24 hours.
             </p>
 
             {/* Direct Email Card */}

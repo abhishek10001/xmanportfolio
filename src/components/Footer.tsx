@@ -106,7 +106,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-[11px] text-zinc-600">
-          &copy; 2025 Abhishek Gangwar. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
+          &copy; {new Date().getFullYear()} Abhishek Gangwar. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
         </div>
       </div>
     </footer>

@@ -53,7 +53,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               Profile Summary
             </div>
             <p className="text-zinc-300 leading-relaxed font-sans text-sm">
-              Lead AI Engineer with 6+ years specializing in distributed inference systems, 
+              Abhishek Gangwar is a Lead AI Engineer with 6+ years specializing in distributed inference systems, 
               custom Triton CUDA kernels for speculative decoding, multi-agent RAG pipelines, 
               and domain-specific LLM fine-tuning (QLoRA, DPO). Deployed models supporting &gt;10M monthly inferences.
             </p>
@@ -116,17 +116,17 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               onClick={handleDownload}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-mono"
             >
-              {downloaded ? (\
-                <>\
-                  <Check className="w-3.5 h-3.5 text-emerald-300" />\
-                  <span>Downloaded PDF</span>\
-                </>\
-              ) : (\
-                <>\
-                  <Download className="w-3.5 h-3.5" />\
-                  <span>Download Full PDF</span>\
-                </>\
-              )}\
+              {downloaded ? (
+                <>
+                  <Check className="w-3.5 h-3.5 text-emerald-300" />
+                  <span>Downloaded PDF</span>
+                </>
+              ) : (
+                <>
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Download Full PDF</span>
+                </>
+              )}
             </button>
             <button
               onClick={onClose}
