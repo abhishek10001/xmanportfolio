@@ -39,7 +39,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
         <div className="flex items-center justify-between">
           {/* Logo & Callout */}
           <div className="flex items-center gap-3">
-            <a href="#" className="flex items-center gap-2.5 group">
+            <a href="#" className="flex items-center gap-2 group">
               <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/20 via-blue-600/30 to-violet-600/20 border border-cyan-500/30 group-hover:border-cyan-400/60 transition-colors shrink-0">
                 <span className="font-mono text-xs font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
                   AG
@@ -50,15 +50,17 @@ export function Navbar({ onOpenResume }: NavbarProps) {
                 <div className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5 whitespace-nowrap">
                   ABHISHEK GANGWAR
                   <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
-                <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
-                  ABHISHEK GANGWAR
-                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
-                    AI ENG
+                    <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
+                      ABHISHEK GANGWAR
+                      <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
+                        AI ENG
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-zinc-400 font-mono tracking-tight flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
+                      inference &amp; agents
+                    </div>
                   </span>
-                </div>
-                <div className="text-[11px] text-zinc-400 font-mono tracking-tight flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
-                  inference &amp; agents
                 </div>
               </div>
             </a>
@@ -147,7 +149,6 @@ export function Navbar({ onOpenResume }: NavbarProps) {
             </button>
           </div>
         </div>
-      </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (

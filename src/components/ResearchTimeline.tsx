@@ -88,13 +88,13 @@ export function ResearchTimeline() {
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-violet-950/60 border border-violet-500/30 text-violet-300 text-xs font-mono mb-3">
               <BookOpen className="w-3.5 h-3.5 text-violet-400" />
-              <span>Publications, Benchmarks &amp; System Milestones</span>
+              <span>Publications, Benchmarks & Systems Milestones</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Research &amp; Systems Engineering Track Record
+              Research & Systems Engineering Track Record
             </h2>
             <p className="text-zinc-400 text-sm sm:text-base mt-2 max-w-2xl">
-              Peer-reviewed research and production system benchmarks focused on high-throughput 
+              Peer-reviewed research and production system benchmarks focused on high-throughput
               inference, quantized execution, and reliable autonomous agents.
             </p>
           </div>
