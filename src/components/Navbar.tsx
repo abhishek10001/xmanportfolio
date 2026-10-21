@@ -22,8 +22,8 @@ export function Navbar({ onOpenResume }: NavbarProps) {
 
   const navLinks = [
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills & Sandbox', href: '#skills' },
-    { name: 'Research & Benchmarks', href: '#research' },
+    { name: 'Skills &amp; Sandbox', href: '#skills' },
+    { name: 'Research &amp; Benchmarks', href: '#research' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -49,10 +49,11 @@ export function Navbar({ onOpenResume }: NavbarProps) {
               <div>
                 <div className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5 whitespace-nowrap">
                   ABHISHEK GANGWAR
-                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
+                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal"
+                >
                 <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
                   ABHISHEK GANGWAR
-                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
+                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal"
                     AI ENG
                   </span>
                 </div>

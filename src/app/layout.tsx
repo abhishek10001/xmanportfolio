@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
   keywords: ["AI Engineer", "LLM Fine-tuning", "vLLM", "TensorRT-LLM", "Multi-Agent Systems", "Speculative Decoding", "PyTorch", "CUDA"],
   authors: [{ name: "Abhishek Gangwar" }],
+  openGraph: {
+    title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
+    description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
+    type: "website",
+  },
 };
 
 export const viewport: Viewport = {
@@ -25,34 +30,11 @@ export const viewport: Viewport = {
   themeColor: "#08090d",
 };
 
-export const metadata: Metadata = {
-  title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
-  description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
-  keywords: [
-    "Abhishek Gangwar",
-    "AI Engineer",
-    "LLM Fine-tuning",
-    "vLLM",
-    "TensorRT-LLM",
-    "Multi-Agent Systems",
-    "Speculative Decoding",
-    "PyTorch",
-    "CUDA"
-  ],
-  authors: [{ name: "Abhishek Gangwar" }],
-  openGraph: {
-    title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
-    description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
-    type: "website",
-  },
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -64,7 +46,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-
-// Top-level named exports for Next.js App Router metadata/viewport support
-// Default export `RootLayout` satisfies the `LayoutConfig` constraint
-// Previously missing `default` export caused: Type 'typeof import("/workspace/repo/src/app/layout")' does not satisfy the constraint 'LayoutConfig<"/">'. Property 'default' is missing...
