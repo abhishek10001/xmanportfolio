@@ -1,23 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  X as CloseIcon, 
-  Download, 
-  FileText, 
-  Check, 
-  Briefcase, 
-  GraduationCap 
-import {
-  X as CloseIcon,
-  Download,
-  FileText,
-  Check,
-  Sparkles,
-  Award,
-  Briefcase,
-  GraduationCap
-} from 'lucide-react';
+import { X as CloseIcon, Download, FileText, Check, Sparkles, Award, Briefcase, GraduationCap } from 'lucide-react';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -90,7 +74,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
 
               <div>
                 <div className="flex justify-between items-center text-white font-bold">
-                  <span>Senior ML Engineer (LLMs &amp; RAG) — CogniScale Inc</span>
+                  <span>Senior ML Engineer (LLMs & RAG) — CogniScale Inc</span>
                   <span className="text-zinc-500 text-[11px]">2020 — 2022</span>
                 </div>
                 <div className="text-cyan-300 text-[11px]">LangGraph, Qdrant, PyTorch, DeepSpeed</div>
