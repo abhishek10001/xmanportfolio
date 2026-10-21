@@ -1,16 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import {
-  X as CloseIcon,
-  Download,
-  FileText,
-  Check,
-  Sparkles,
-  Award,
-  Briefcase,
-  GraduationCap
-} from 'lucide-react';
+import { X as CloseIcon, Download, FileText, Check, Sparkles, Award, Briefcase, GraduationCap } from 'lucide-react';
 
 interface ResumeModalProps {
   isOpen: boolean;
