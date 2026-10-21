@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X as CloseIcon, FileText } from 'lucide-react';
+import { Menu, FileText } from 'lucide-react';
 import { GithubIcon, HuggingFaceIcon, TwitterXIcon, LinkedinIcon } from './SocialIcons';
 
 interface NavbarProps {
@@ -29,11 +29,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 {
-        scrolled
-          ? 'bg-[#090a0f]/80 backdrop-blur-md border-b border-white/10 shadow-2xl shadow-cyan-950/20 py-3.5'
-          : 'bg-transparent py-5'
-      }`}
+      className={"fixed top-0 left-0 right-0 z-50 transition-all duration-300 {\n        scrolled\n          ? 'bg-[#090a0f]/80 backdrop-blur-md border-b border-white/10 shadow-2xl shadow-cyan-950/20 py-3.5'\n          : 'bg-transparent py-5'\n      }"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
@@ -49,16 +45,9 @@ export function Navbar({ onOpenResume }: NavbarProps) {
               <div>
                 <div className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5 whitespace-nowrap">
                   ABHISHEK GANGWAR
-                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
-                <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
-                  ABHISHEK GANGWAR
                   <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
                     AI ENG
                   </span>
-                </div>
-                <div className="text-[11px] text-zinc-400 font-mono tracking-tight flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
-                  inference &amp; agents
                 </div>
               </div>
             </a>
@@ -143,7 +132,19 @@ export function Navbar({ onOpenResume }: NavbarProps) {
               className="p-2 text-zinc-400 hover:text-white rounded-lg hover:bg-white/5"
               aria-label="Toggle navigation menu"
             >
-              {mobileMenuOpen ? <CloseIcon className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {mobileMenuOpen ? (
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  className="w-5 h-5"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -153,7 +154,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
         <div className="md:hidden border-b border-white/10 bg-[#0c0d14]/95 backdrop-blur-xl px-4 py-4 space-y-3">
           <div className="flex items-center gap-2 py-1 text-xs font-mono text-emerald-400">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span>Available for AI Architecture &amp; Research</span>
+            <span>Available for AI Architecture & Research</span>
           </div>
           <div className="flex flex-col space-y-1">
             {navLinks.map((link) => (
