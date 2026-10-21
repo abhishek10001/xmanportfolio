@@ -25,6 +25,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#08090d] text-zinc-100 flex flex-col selection:bg-cyan-500/30 selection:text-cyan-200">
+      <header className="p-4 text-center text-cyan-400 text-xs font-mono uppercase tracking-wider">
+        Abhishek Gangwar
+      </header>
       {/* Sticky frosted glass navigation */}
       <Navbar onOpenResume={() => setIsResumeOpen(true)} />
 

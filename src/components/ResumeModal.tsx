@@ -8,6 +8,15 @@ import {
   Check, 
   Briefcase, 
   GraduationCap 
+import {
+  X as CloseIcon,
+  Download,
+  FileText,
+  Check,
+  Sparkles,
+  Award,
+  Briefcase,
+  GraduationCap
 } from 'lucide-react';
 
 interface ResumeModalProps {
@@ -32,7 +41,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         <div className="flex items-center justify-between pb-4 border-b border-white/10">
           <div className="flex items-center gap-2.5">
             <FileText className="w-5 h-5 text-cyan-400" />
-            <h3 className="text-lg font-bold text-white font-mono tracking-wide">
+            <h3 className="text-lg font-bold text-white font-mono">
               ABHISHEK GANGWAR — CURRICULUM VITAE
             </h3>
           </div>
@@ -53,8 +62,8 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               Profile Summary
             </div>
             <p className="text-zinc-300 leading-relaxed font-sans text-sm">
-              Abhishek Gangwar is a Lead AI Engineer with 6+ years specializing in distributed inference systems, 
-              custom Triton CUDA kernels for speculative decoding, multi-agent RAG pipelines, 
+              Lead AI Engineer with 6+ years specializing in distributed inference systems,
+              custom Triton CUDA kernels for speculative decoding, multi-agent RAG pipelines,
               and domain-specific LLM fine-tuning (QLoRA, DPO). Deployed models supporting &gt;10M monthly inferences.
             </p>
           </div>
