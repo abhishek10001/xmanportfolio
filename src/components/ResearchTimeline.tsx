@@ -37,7 +37,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     arxivId: '2405.09912',
     bibtex: `@inproceedings{chen2024dynamic,
   title={Dynamic Branch Pruning for Speculative Decoding on Long-Context Reasoning},
-  author={Chen, Alexander and Ramirez, Elena},
+  author={Gangwar, Abhishek and Ramirez, Elena},
   booktitle={NeurIPS Workshop on Efficient LLMs},
   year={2024}
 }`,
