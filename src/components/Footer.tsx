@@ -46,7 +46,7 @@ export function Footer() {
           <div className="space-y-1 text-center md:text-left">
             <div className="font-bold text-white tracking-wider flex items-center justify-center md:justify-start gap-2">
               <Terminal className="w-4 h-4 text-cyan-400" />
-              <span>ALEXANDER CHEN</span>
+              <span>ABHISHEK GANGWAR</span>
               <span className="text-[10px] text-zinc-500">// LEAD AI ARCHITECT</span>
             </div>
             <p className="text-[11px] text-zinc-500">
@@ -106,7 +106,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-[11px] text-zinc-600">
-          &copy; 2025 Alexander Chen. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
+          &copy; {new Date().getFullYear()} Abhishek Gangwar. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
         </div>
       </div>
     </footer>

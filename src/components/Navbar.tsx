@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Terminal, Menu, X as CloseIcon, FileText, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Menu, X as CloseIcon, FileText } from 'lucide-react';
 import { GithubIcon, HuggingFaceIcon, TwitterXIcon, LinkedinIcon } from './SocialIcons';
 
 interface NavbarProps {
@@ -40,11 +40,16 @@ export function Navbar({ onOpenResume }: NavbarProps) {
           {/* Logo & Callout */}
           <div className="flex items-center gap-3">
             <a href="#" className="flex items-center gap-2.5 group">
-              <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/20 via-blue-600/30 to-violet-600/20 border border-cyan-500/30 group-hover:border-cyan-400/60 transition-colors">
-                <Terminal className="w-4 h-4 text-cyan-400 group-hover:text-cyan-300 transition-colors" />
+              <div className="relative flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-cyan-500/20 via-blue-600/30 to-violet-600/20 border border-cyan-500/30 group-hover:border-cyan-400/60 transition-colors shrink-0">
+                <span className="font-mono text-xs font-bold text-cyan-400 group-hover:text-cyan-300 transition-colors">
+                  AG
+                </span>
                 <div className="absolute inset-0 rounded-lg bg-cyan-400/10 blur-sm group-hover:opacity-100 opacity-50 transition-opacity" />
               </div>
               <div>
+                <div className="font-mono text-xs sm:text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5 whitespace-nowrap">
+                  ABHISHEK GANGWAR
+                  <span className="text-[10px] uppercase font-mono px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
                 <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
                   ABHISHEK GANGWAR
                   <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
@@ -53,7 +58,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
                 </div>
                 <div className="text-[11px] text-zinc-400 font-mono tracking-tight flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse inline-block" />
-                  inference & agents
+                  inference &amp; agents
                 </div>
               </div>
             </a>

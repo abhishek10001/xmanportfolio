@@ -1,6 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
+import { 
+  X as CloseIcon, 
+  Download, 
+  FileText, 
+  Check, 
+  Briefcase, 
+  GraduationCap 
 import {
   X as CloseIcon,
   Download,

@@ -4,13 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { 
   Sparkles, 
   ArrowRight, 
-  Terminal, 
   Cpu, 
   Activity, 
-  Zap, 
   Copy, 
   Check, 
-  ShieldCheck, 
   Play, 
   RefreshCw,
   Server
@@ -89,10 +86,10 @@ export function Hero({ onExploreProjects, onLaunchSandbox }: HeroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Headline and Pitch */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            {/* Pulsing Specialty Badge */}
+            {/* Pulsing Identity Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/40 text-cyan-300 text-xs font-mono shadow-sm shadow-cyan-950/50">
               <span className="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping" />
-              <span>LLM Fine-tuning &amp; Autonomous Agents Specialist</span>
+              <span>Abhishek Gangwar • Lead AI &amp; Inference Engineer</span>
               <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
             </div>
 
@@ -115,7 +112,7 @@ export function Hero({ onExploreProjects, onLaunchSandbox }: HeroProps) {
 
             {/* Sub-headline */}
             <p className="text-base sm:text-lg text-zinc-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-              Lead AI Engineer engineering high-throughput distributed systems, 
+              I&apos;m <span className="text-white font-semibold">Abhishek Gangwar</span> — Lead AI Engineer engineering high-throughput distributed systems, 
               quantized speculative decoding (TensorRT-LLM, vLLM), hierarchical multi-agent workflows, 
               and domain-adapted foundation models with verified zero-shot reasoning.
             </p>
@@ -167,7 +164,7 @@ export function Hero({ onExploreProjects, onLaunchSandbox }: HeroProps) {
                   <div className="w-3 h-3 rounded-full bg-emerald-500/80" />
                   <span className="ml-2 font-mono text-xs text-zinc-400 flex items-center gap-1.5">
                     <Server className="w-3 h-3 text-cyan-400" />
-                    node-cluster-h100-primary:~/synapse-daemon
+                    abhishek@h100-primary-node:~/synapse-daemon
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
