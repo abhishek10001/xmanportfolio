@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Terminal, Shield, Cpu, Activity, ArrowUp } from 'lucide-react';
+import { Terminal, ArrowUp } from 'lucide-react';
 import { GithubIcon, HuggingFaceIcon, TwitterXIcon, LinkedinIcon, ArxivIcon } from './SocialIcons';
 
 export function Footer() {
@@ -34,7 +34,7 @@ export function Footer() {
 
           <button
             onClick={scrollToTop}
-            className="flex items-center gap-1.5 px-3 py-1 rounded bg-white/5 hover:bg-white/10 text-zinc-300 transition-colors"
+            className="flex items-center gap-1.5 px-3 py-1 rounded bg-white/5 hover:bg-white/10 text-zinc-300 transition-colors cursor-pointer"
           >
             <span>Top</span>
             <ArrowUp className="w-3.5 h-3.5" />
@@ -106,7 +106,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-[11px] text-zinc-600">
-          &copy; {new Date().getFullYear()} Alexander Chen. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
+          &copy; 2025 Alexander Chen. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
         </div>
       </div>
     </footer>
