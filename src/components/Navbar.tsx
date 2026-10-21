@@ -22,8 +22,8 @@ export function Navbar({ onOpenResume }: NavbarProps) {
 
   const navLinks = [
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills & Sandbox', href: '#skills' },
-    { name: 'Research & Benchmarks', href: '#research' },
+    { name: 'Skills &amp; Sandbox', href: '#skills' },
+    { name: 'Research &amp; Benchmarks', href: '#research' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -148,7 +148,6 @@ export function Navbar({ onOpenResume }: NavbarProps) {
             </button>
           </div>
         </div>
-      </div>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
