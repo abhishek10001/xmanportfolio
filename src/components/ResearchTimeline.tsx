@@ -31,8 +31,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     type: 'Research',
     title: 'Dynamic Branch Pruning for Speculative Decoding on Long-Context Reasoning',
     venue: 'NeurIPS Workshop on Efficient LLM Inference & System Co-Design',
-    summary:
-      'Proposed a dynamic speculative draft pruning mechanism that evaluates confidence bounds at each token step, discarding non-viable generation paths early. Achieved a 2.4x speedup over standard autoregressive decoding on 128k context benchmarks.',
+    summary: 'Proposed a dynamic speculative draft pruning mechanism that evaluates confidence bounds at each token step, discarding non-viable generation paths early. Achieved a 2.4x speedup over standard autoregressive decoding on 128k context benchmarks.',
     stats: '2.4x speedup / 128K context',
     arxivId: '2405.09912',
     bibtex: `@inproceedings{gangwar2024dynamic,
@@ -47,8 +46,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     type: 'Architecture',
     title: 'Production-Scale Agentic Workflows: Reducing Cascading Failures in Enterprise RAG',
     venue: 'Systems & ML Technical Whitepaper / Open Source Release',
-    summary:
-      'Detailed an actor-critic reflection architecture preventing compounding hallucination errors in multi-hop analytical queries. Deployed across 3 enterprise customers handling over 400,000 daily questions.',
+    summary: 'Detailed an actor-critic reflection architecture preventing compounding hallucination errors in multi-hop analytical queries. Deployed across 3 enterprise customers handling over 400,000 daily questions.',
     stats: '400k+ daily queries / 98.4% factuality',
   },
   {
@@ -56,8 +54,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     type: 'Benchmark',
     title: 'Sub-20ms Sparse-Dense Hybrid Embeddings on Trillion-Vector Collections',
     venue: 'Vector Database Engineering Benchmark Report',
-    summary:
-      'Engineered an asynchronous hybrid retrieval index marrying BGE-M3 dense vectors with BM25 inverted indices, demonstrating p99 latency reduction from 140ms to 18ms with 0.94 NDCG@10.',
+    summary: 'Engineered an asynchronous hybrid retrieval index marrying BGE-M3 dense vectors with BM25 inverted indices, demonstrating p99 latency reduction from 140ms to 18ms with 0.94 NDCG@10.',
     stats: '18ms p99 / 0.94 NDCG@10',
   },
   {
@@ -65,8 +62,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     type: 'Architecture',
     title: 'Distributed ZeRO-3 Fine-Tuning of 70B Models on Heterogeneous GPU Meshes',
     venue: 'Open Source Distributed AI Framework',
-    summary:
-      'Implemented parameter partitioning with custom overlapping communication kernels for 70B fine-tuning across mixed A100/H100 clusters, cutting inter-node PCIe overhead by 34%.',
+    summary: 'Implemented parameter partitioning with custom overlapping communication kernels for 70B fine-tuning across mixed A100/H100 clusters, cutting inter-node PCIe overhead by 34%.',
     stats: '34% PCIe overhead reduction',
   },
 ];
