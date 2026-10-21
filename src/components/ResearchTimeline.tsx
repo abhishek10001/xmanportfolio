@@ -1,14 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  BookOpen, 
-  Award, 
-  ExternalLink, 
-  FileText, 
-  Copy, 
-  Check, 
-  TrendingUp, 
+import {
+  BookOpen,
+  Award,
+  ExternalLink,
+  FileText,
+  Copy,
+  Check,
+  TrendingUp,
   Cpu,
   Layers
 } from 'lucide-react';
@@ -37,7 +37,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
     arxivId: '2405.09912',
     bibtex: `@inproceedings{chen2024dynamic,
   title={Dynamic Branch Pruning for Speculative Decoding on Long-Context Reasoning},
-  author={Chen, Alexander and Ramirez, Elena},
+  author={Gangwar, Abhishek and Ramirez, Elena},
   booktitle={NeurIPS Workshop on Efficient LLMs},
   year={2024}
 }`,
@@ -164,7 +164,7 @@ export function ResearchTimeline() {
                         onClick={() => handleCopyBibtex(item.bibtex!, idx)}
                         className="inline-flex items-center gap-1 text-xs font-mono text-zinc-400 hover:text-cyan-300 transition-colors"
                       >
-                        {copiedBibtexIdx === idx ? (
+                        {copiedBibtexIdx === idx && (
                           <>
                             <Check className="w-3 h-3 text-emerald-400" />
                             <span className="text-emerald-400">BibTeX copied!</span>
