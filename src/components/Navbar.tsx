@@ -29,7 +29,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 {
         scrolled
           ? 'bg-[#090a0f]/80 backdrop-blur-md border-b border-white/10 shadow-2xl shadow-cyan-950/20 py-3.5'
           : 'bg-transparent py-5'
@@ -46,7 +46,7 @@ export function Navbar({ onOpenResume }: NavbarProps) {
               </div>
               <div>
                 <div className="font-mono text-sm font-semibold tracking-wider text-zinc-100 flex items-center gap-1.5">
-                  ALEX CHEN
+                  ABHISHEK GANGWAR
                   <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded bg-cyan-950/80 text-cyan-400 border border-cyan-800/40 font-normal">
                     AI ENG
                   </span>
