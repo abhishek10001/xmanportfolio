@@ -19,10 +19,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Alexander Chen | Lead AI & Inference Engineer Portfolio",
-  description: "Portfolio of Alexander Chen — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
+  title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
+  description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
   keywords: ["AI Engineer", "LLM Fine-tuning", "vLLM", "TensorRT-LLM", "Multi-Agent Systems", "Speculative Decoding", "PyTorch", "CUDA"],
-  authors: [{ name: "Alexander Chen" }],
+  authors: [{ name: "Abhishek Gangwar" }],
 };
 
 export default function RootLayout({

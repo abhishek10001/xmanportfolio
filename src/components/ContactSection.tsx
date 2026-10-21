@@ -7,11 +7,7 @@ import {
   Mail, 
   Copy, 
   ShieldCheck, 
-  Key, 
-  MessageSquare, 
-  Calendar,
-  Sparkles,
-  ArrowRight
+  Key
 } from 'lucide-react';
 
 const TOPICS = [
@@ -38,7 +34,7 @@ export function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
 
   const pgpKeyFingerprint = '4A91 B21D 908E FC81 332D  E041 8F22 9901 C7F2 EAA8';
-  const directEmail = 'alexander.chen.ai@proton.me';
+  const directEmail = 'abhishek.gangwar.ai@proton.me';
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

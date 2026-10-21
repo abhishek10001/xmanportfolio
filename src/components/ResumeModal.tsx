@@ -6,8 +6,6 @@ import {
   Download, 
   FileText, 
   Check, 
-  Sparkles, 
-  Award, 
   Briefcase, 
   GraduationCap 
 } from 'lucide-react';
@@ -34,8 +32,8 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         <div className="flex items-center justify-between pb-4 border-b border-white/10">
           <div className="flex items-center gap-2.5">
             <FileText className="w-5 h-5 text-cyan-400" />
-            <h3 className="text-lg font-bold text-white font-mono">
-              ALEXANDER CHEN — CURRICULUM VITAE
+            <h3 className="text-lg font-bold text-white font-mono tracking-wide">
+              ABHISHEK GANGWAR — CURRICULUM VITAE
             </h3>
           </div>
           <button
@@ -118,17 +116,17 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               onClick={handleDownload}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-medium text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-mono"
             >
-              {downloaded ? (
-                <>
-                  <Check className="w-3.5 h-3.5 text-emerald-300" />
-                  <span>Downloaded PDF</span>
-                </>
-              ) : (
-                <>
-                  <Download className="w-3.5 h-3.5" />
-                  <span>Download Full PDF</span>
-                </>
-              )}
+              {downloaded ? (\
+                <>\
+                  <Check className="w-3.5 h-3.5 text-emerald-300" />\
+                  <span>Downloaded PDF</span>\
+                </>\
+              ) : (\
+                <>\
+                  <Download className="w-3.5 h-3.5" />\
+                  <span>Download Full PDF</span>\
+                </>\
+              )}\
             </button>
             <button
               onClick={onClose}
