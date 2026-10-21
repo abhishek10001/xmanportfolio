@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#08090d] text-zinc-100 flex flex-col selection:bg-cyan-500/30 selection:text-cyan-200">
-      <header className="py-2.5 px-4 text-center text-cyan-400 text-xs font-mono uppercase tracking-widest bg-[#06070a] border-b border-white/5">
+      <header className="py-3 px-6 text-center text-cyan-400 text-xs font-mono uppercase tracking-[0.2em] bg-[#06070a] border-b border-white/5">
         Abhishek Gangwar &bull; AI Engineering &amp; Research Portfolio
       </header>
       {/* Sticky frosted glass navigation */}

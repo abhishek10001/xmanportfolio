@@ -1,34 +1,10 @@
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
-  description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
-  keywords: ["AI Engineer", "LLM Fine-tuning", "vLLM", "TensorRT-LLM", "Multi-Agent Systems", "Speculative Decoding", "PyTorch", "CUDA"],
-  authors: [{ name: "Abhishek Gangwar" }],
-  openGraph: {
-    title: "Abhishek Gangwar | Lead AI & Inference Engineer Portfolio",
-    description: "Portfolio of Abhishek Gangwar — Senior AI Engineer specializing in LLM Fine-Tuning, Low-Latency Speculative Decoding, Autonomous Agentic Systems, and High-Throughput Inference Architectures.",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Abhishek Gangwar | AI Engineering & Research Portfolio',
+  description: 'Lead AI & Inference Engineer specializing in LLM Fine-Tuning, Quantized Speculative Decoding, and Distributed Multi-Agent Systems.',
 };
 
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  themeColor: "#08090d",
-};
+import './globals.css';
+import { ReactNode } from 'react';
 
 export default function RootLayout({
   children,
@@ -36,8 +12,8 @@ export default function RootLayout({
   children: ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-[#08090d] text-zinc-100">
+    <html lang="en" className="dark scroll-smooth">
+      <body className="bg-[#08090d] text-zinc-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
         {children}
       </body>
     </html>
