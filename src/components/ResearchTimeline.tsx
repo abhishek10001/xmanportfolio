@@ -35,12 +35,12 @@ const TIMELINE_DATA: TimelineEntry[] = [
       'Proposed a dynamic speculative draft pruning mechanism that evaluates confidence bounds at each token step, discarding non-viable generation paths early. Achieved a 2.4x speedup over standard autoregressive decoding on 128k context benchmarks.',
     stats: '2.4x speedup / 128K context',
     arxivId: '2405.09912',
-    bibtex: `@inproceedings{chen2024dynamic,
-  title={Dynamic Branch Pruning for Speculative Decoding on Long-Context Reasoning},
-  author={Chen, Alexander and Ramirez, Elena},
-  booktitle={NeurIPS Workshop on Efficient LLMs},
-  year={2024}
-}`,
+    bibtex: `@inproceedings{gangwar2024dynamic,
+      title={Dynamic Branch Pruning for Speculative Decoding on Long-Context Reasoning},
+      author={Gangwar, Abhishek and Ramirez, Elena},
+      booktitle={NeurIPS Workshop on Efficient LLMs},
+      year={2024}
+    },
   },
   {
     year: '2024',
