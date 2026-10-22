@@ -12,26 +12,8 @@ export function Footer() {
   return (
     <footer className="bg-[#05060a] border-t border-white/10 py-12 text-zinc-400 text-xs font-mono">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        {/* Live Cluster Health HUD */}
-        <div className="p-4 rounded-xl bg-black/40 border border-white/5 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-zinc-300 font-semibold">vLLM Inference Daemon:</span>
-              <span className="text-emerald-400">99.98% Uptime</span>
-            </div>
-            <div className="hidden sm:inline-block text-zinc-600">|</div>
-            <div className="flex items-center gap-1.5">
-              <span className="text-zinc-500">KV Cache:</span>
-              <span className="text-cyan-300">PagedAttention v3 (32k ctx)</span>
-            </div>
-            <div className="hidden sm:inline-block text-zinc-600">|</div>
-            <div className="flex items-center gap-1.5">
-              <span className="text-zinc-500">Weights:</span>
-              <span className="text-violet-300">AWQ 4-Bit Verified</span>
-            </div>
-          </div>
-
+        {/* Top Scroll Button bar */}
+        <div className="flex justify-end">
           <button
             onClick={scrollToTop}
             className="flex items-center gap-1.5 px-3 py-1 rounded bg-white/5 hover:bg-white/10 text-zinc-300 transition-colors cursor-pointer"
