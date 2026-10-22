@@ -13,7 +13,7 @@ export function Footer() {
     <footer className="bg-[#05060a] border-t border-white/10 py-12 text-zinc-400 text-xs font-mono">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Brand, Socials & Back to Top */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-white/5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center md:text-left">
             <div className="font-bold text-white tracking-wider flex items-center justify-center md:justify-start gap-2">
               <Terminal className="w-4 h-4 text-cyan-400" />
@@ -84,11 +84,6 @@ export function Footer() {
               <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
-        </div>
-
-        {/* Copyright */}
-        <div className="text-center text-[11px] text-zinc-600">
-          &copy; 2025 Abhishek Gangwar. Built with Next.js 16, TypeScript &amp; Tailwind CSS.
         </div>
       </div>
     </footer>
